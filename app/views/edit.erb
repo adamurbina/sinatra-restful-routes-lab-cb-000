@@ -1,3 +1,9 @@
 <html>
-  <h2><label>Recipe Name:</label></h2>
+
+  <form action='/recipes/<%= @recipe.id %>' method='post'>
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <input type="text" name="name">
+    <input type="text" name="ingredients">
+    <input type="text" name="cook_time">
+  </form>
 </html>
